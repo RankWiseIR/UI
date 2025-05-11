@@ -15,4 +15,5 @@ ToDO:
 - [ ] Add/update models
 - [ ] Add cranfield or other docs
 - [ ] Server to host
-- [x] make UI 
+- [x] make UI
+- [ ] make changes to static/js/app.js if needed
