@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Search Engine Comparison</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+
+
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="site-title">UnMASK Search Engine</h1>
+                <div class="model-selector">
+                    <button class="model-btn active" data-model="vector">Vector-based IR</button>
+                    <button class="model-btn" data-model="lsa">LSA</button>
+                    <button class="model-btn" data-model="word2vec">Word2Vec</button>
+                    <button class="model-btn" data-model="glove">GloVe</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <!-- Search box -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i data-feather="search" class="search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Enter your search query...">
+                    <button id="search-btn">
+                        <span class="search-text">Search</span>
+                        <span class="loading-spinner hidden">
+                            <i data-feather="loader" class="spin"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results container -->
+            <div class="results-container">
+                <!-- Metrics section (will be populated by JS) -->
+                <div id="metrics-section" class="hidden">
+                    <div class="metrics-header">
+                        <h2>Search Metrics</h2>
+                        <button id="toggle-metrics">Hide</button>
+                    </div>
+                    <div class="metrics-grid" id="metrics-grid">
+                        <!-- Metrics will be inserted here by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Search results (will be populated by JS) -->
+                <div id="search-results" class="search-results">
+                    <!-- Results will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>NLP Assignment: Search Engine Comparison • Vector-IR • LSA • Word2Vec • GloVe</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="static/js/app.js"></script>
+    <script>
+        // Initialize Feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
