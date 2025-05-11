@@ -20,3 +20,4 @@ ToDO:
 - [ ] Server to host
 - [x] make UI
 - [ ] make changes to static/js/app.js if needed
+- [ ] Update final Readme.md
