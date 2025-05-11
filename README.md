@@ -1,7 +1,9 @@
 # UI
 UI for various IR models
 
-## Install requirements.txt files : `pip install -r requirements.txt`
+## Install requirements.txt  : 
+
+`pip install -r requirements.txt`
 
 ## Models.py contains all the models 
 
