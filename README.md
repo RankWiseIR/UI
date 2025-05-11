@@ -12,7 +12,7 @@ Start the server by running app.py file and going to localhost:5001 for the user
 
 
 ToDO:
-- [] Add/update models
-- [] Add cranfield or other docs
-- [] Server to host
+- [ ] Add/update models
+- [ ] Add cranfield or other docs
+- [ ] Server to host
 - [x] make UI 
